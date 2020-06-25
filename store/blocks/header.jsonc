@@ -1,4 +1,31 @@
 {
+    "header": {
+        "blocks": [
+          "header-layout.desktop",
+          "header-layout.mobile"
+        ]
+      },
+      "header.full": {
+        "blocks": [
+          "header-layout.desktop",
+          "header-layout.mobile"
+        ]
+      },
+    
+      "header-layout.desktop": {
+        "children": [
+          "header-row#notification",
+          "header-row#main"
+        ]
+      },
+    
+      "header-layout.mobile": {
+        "children": [
+          "header-row#notification",
+          "header-row#main-mobile",
+          "header-row#search"
+        ]
+      },
     "header-row#notification": {
         "children": [
           "header-spacer",
@@ -13,7 +40,12 @@
             "search-bar",
             "minicart",
             "login"
-        ]
+        ],
+        "props": {
+            "inverted": true,
+            "sticky": true,
+            "fullWidth": false
+        }
       },
       "header-row#main-mobile": {
         "children": [

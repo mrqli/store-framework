@@ -1,40 +1,40 @@
 {
     "header": {
         "blocks": [
-          "header-layout.desktop",
-          "header-layout.mobile"
+            "header-layout.desktop",
+            "header-layout.mobile"
         ]
-      },
-      "header.full": {
+    },
+    "header.full": {
         "blocks": [
-          "header-layout.desktop",
-          "header-layout.mobile"
+            "header-layout.desktop",
+            "header-layout.mobile"
         ]
-      },
-    
-      "header-layout.desktop": {
+    },
+
+    "header-layout.desktop": {
         "children": [
-          "header-row#notification",
-          "header-row#main",
-          "header-row#menu"
+            "header-row#notification",
+            "header-row#main",
+            "header-row#menu"
         ]
-      },
-    
-      "header-layout.mobile": {
+    },
+
+    "header-layout.mobile": {
         "children": [
-          "header-row#notification",
-          "header-row#main-mobile",
-          "header-row#search"
+            "header-row#notification",
+            "header-row#main-mobile",
+            "header-row#search"
         ]
-      },
+    },
     "header-row#notification": {
         "children": [
-          "header-spacer",
-          "rich-text#header",
-          "header-spacer"
+            "header-spacer",
+            "rich-text#header",
+            "header-spacer"
         ]
-      },
-      "header-row#main": {
+    },
+    "header-row#main": {
         "children": [
             "logo",
             "header-spacer",
@@ -47,53 +47,53 @@
             "sticky": true,
             "fullWidth": false
         }
-      },
-      "header-row#main-mobile": {
+    },
+    "header-row#main-mobile": {
         "children": [
-          "drawer",
-          "logo",
-          "header-spacer",
-          "minicart",
-          "login"
+            "drawer",
+            "logo",
+            "header-spacer",
+            "minicart",
+            "login"
         ],
-      
+
         "props": {
-          "sticky": true,
-          "inverted":true
+            "sticky": true,
+            "inverted": true
         }
-      },
-      
-      "header-row#search": {
+    },
+
+    "header-row#search": {
         "children": [
-          "search-bar"
+            "search-bar"
         ],
         "props": {
-          "sticky": true
+            "sticky": true
         }
-      },
-      "login":{
+    },
+    "login": {
         "props": {
-          "showIconProfile": true,
-          "iconLabel": "Login"
+            "showIconProfile": true,
+            "iconLabel": "Login"
         }
-      },
-      
-      "logo":{
+    },
+
+    "logo": {
         "props": {
-          "url": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/flatflat___6081e50402943bcb11bc45a8e613aa72.png"
+            "url": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/flatflat___6081e50402943bcb11bc45a8e613aa72.png"
         }
-      },
-      "rich-text#header": {
+    },
+    "rich-text#header": {
         "props": {
-          "text": "**Free Shipping on orders over $50**",
-          "textPosition": "CENTER"
+            "text": "**Free Shipping on orders over $50**",
+            "textPosition": "CENTER"
         }
-      },
-      "header-row#menu": {
+    },
+    "header-row#menu": {
         "children": [
-          "header-spacer",
-          "vtex.menu@2.x:menu#categories",
-          "header-spacer"
+            "header-spacer",
+            "vtex.menu@2.x:menu#categories",
+            "header-spacer"
         ]
-      }
+    }
 }
